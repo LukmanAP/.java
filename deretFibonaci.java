@@ -26,3 +26,10 @@ public class deretFibonaci {
     }
     
 }
+
+/* 
+    == Program deret fibonaci ==
+    Masukan nilai ke-n yang anda inginkan : 10
+     1 2 3 5 8 13 21 34 55 
+
+*/
