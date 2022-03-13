@@ -54,48 +54,6 @@ public class segitigaBintang {
             } else {
                 System.out.println("nilai yang anda masukin salah\n\n");
             }
-            
-/*
-            switch (no) 
-            {
-                case "1":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaKiriBawah(jumlah); break;
-                case "2":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaKiriAtas(jumlah); break;
-                case "3":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaKananBawah(jumlah); break;
-                case "4":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaKananAtas(jumlah); break;
-                case "5":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaUjungBawah(jumlah); break;
-                case "6":
-                    System.out.print("Masukan Jumlah Panjang : ");
-                    jumlah = scanner.nextInt();
-                    segitigaUjungAtas(jumlah); break;
-                case "x": 
-                    nilai = false;
-                    break;
-                default :
-                    System.out.println("Input yang anda masukan salah");
-            }
-            
-*/
-
-
-
-
-            //String x = null;
-            //x = scanner.nextLine();
         }
     }
 
@@ -190,7 +148,118 @@ public class segitigaBintang {
     }
 
     
+/**
+ * 
+ * 
+ * 
+    *  ==== MENU ====
+    1. segitiga sudut kiri bawah       
+    2. segitiga sudut kiri atas        
+    3. segitiga sudut kanan bawah      
+    4. segitiga sudut kanan atas       
+    5. segitiga sudut bawah
+    6. segitiga sudut atas
+    x. keluar
+    Kalian ingin melihat no berapa ? : 3
+    Masukan Jumlah Panjang : 10
 
+    === Pola tiga ===   
+                    * 
+                    * * 
+                * * * 
+                * * * * 
+            * * * * * 
+            * * * * * * 
+        * * * * * * * 
+        * * * * * * * * 
+    * * * * * * * * * 
+    * * * * * * * * * * 
+    Kalian ingin melihat no berapa ? : 1
+    Masukan Jumlah Panjang : 10
+
+    === Pola satu ===
+    * 
+    * * 
+    * * *
+    * * * *
+    * * * * *
+    * * * * * *
+    * * * * * * *
+    * * * * * * * *
+    * * * * * * * * *
+    * * * * * * * * * *
+    Kalian ingin melihat no berapa ? : 2      
+    Masukan Jumlah Panjang : 10
+
+    === Pola dua ===
+    * * * * * * * * * *
+    * * * * * * * * *
+    * * * * * * * *
+    * * * * * * *
+    * * * * * *
+    * * * * *
+    * * * *
+    * * * 
+    * *
+    *
+    Kalian ingin melihat no berapa ? : 3      
+    Masukan Jumlah Panjang : 10
+
+    === Pola tiga ===
+                      *
+                    * *
+                  * * *
+                * * * *
+              * * * * *
+            * * * * * *
+          * * * * * * *
+        * * * * * * * *
+      * * * * * * * * * 
+    * * * * * * * * * *
+    Kalian ingin melihat no berapa ? : 4      
+    Masukan Jumlah Panjang : 10
+
+    === Pola empat ===
+    * * * * * * * * * *
+      * * * * * * * * *
+        * * * * * * * *
+          * * * * * * *
+            * * * * * *
+              * * * * * 
+                * * * *
+                  * * *
+                    * *
+                      *
+    Kalian ingin melihat no berapa ? : 5      
+    Masukan Jumlah Panjang : 10
+
+    === Pola enam ===
+    * * * * * * * * * *
+     * * * * * * * * *
+      * * * * * * * *
+       * * * * * * *
+        * * * * * *
+         * * * * *
+          * * * *
+           * * * 
+            * *
+             *
+    Kalian ingin melihat no berapa ? : 6      
+    Masukan Jumlah Panjang : 10
+
+    === Pola lima ===
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+        * * * * * *
+       * * * * * * *
+      * * * * * * * *
+     * * * * * * * * * 
+    * * * * * * * * * *
+    Kalian ingin melihat no berapa ? : x      
+    PS D:\My Drive\github\java>  */
 
 
 
