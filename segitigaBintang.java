@@ -8,7 +8,7 @@ public class segitigaBintang {
 
 
         
-            System.out.println("==== MENU ====");
+            System.out.println("==== MENU ===="); 
             System.out.println("1. segitiga sudut kiri bawah");
             System.out.println("2. segitiga sudut kiri atas");
             System.out.println("3. segitiga sudut kanan bawah");
