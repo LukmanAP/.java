@@ -26,15 +26,15 @@ public class segitigaBintang {
             no = scanner.next().charAt(0);
 
             if (no == '1') {
-                System.out.print("Masukan Jumlah Panjang : ");
+                input();
                 jumlah = scanner.nextInt();
                 segitigaKiriBawah(jumlah);
             } else if (no == '2') {
-                System.out.print("Masukan Jumlah Panjang : ");
+                input();
                 jumlah = scanner.nextInt();
                 segitigaKiriAtas(jumlah);
             } else if (no == '3') {
-                System.out.print("Masukan Jumlah Panjang : ");
+                input();
                 jumlah = scanner.nextInt();
                 segitigaKananBawah(jumlah);
             } else if (no == '4') {
@@ -42,11 +42,11 @@ public class segitigaBintang {
                 jumlah = scanner.nextInt();
                 segitigaKananAtas(jumlah);
             } else if (no == '5') {
-                System.out.print("Masukan Jumlah Panjang : ");
+                input();
                 jumlah = scanner.nextInt();
                 segitigaUjungBawah(jumlah);
             } else if (no == '6') {
-                System.out.print("Masukan Jumlah Panjang : ");
+                input();
                 jumlah = scanner.nextInt();
                 segitigaUjungAtas(jumlah);
             } else if (no == 'x') {
@@ -56,6 +56,10 @@ public class segitigaBintang {
             }
         }
     }
+    
+    public static void input() {
+        System.out.print("Masukan jumlah panjang : ")
+    } 
 
 
     public static void segitigaKiriBawah(int jumlah) {
