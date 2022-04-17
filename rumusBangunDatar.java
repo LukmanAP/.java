@@ -4,9 +4,45 @@ import java.util.Scanner;
 public class rumusBangunDatar {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+       
+        
+    }
 
-        
-        
+    public static void menu() {
+        System.out.print("Masukan Nama Anda : ");
+        var nama = scanner.nextLine();
+        int pilih = 1;
+       do {
+            System.out.println("==== MENU ====");
+            System.out.println("1. Persegi");
+            System.out.println("2. Persegi Panjang");
+            System.out.println("3. Segitiga");
+            System.out.println("4. Trapesium");
+            System.out.println("5. Layang - Layang");
+            System.out.println("6. Belah Ketupat");
+            System.out.println("7. Lingkaran");
+            System.out.println("8. KELUAR\n\n");
+
+            System.out.print(nama + ", mau pilih no berpa ? : ");
+            pilih = scanner.nextInt();
+            if (pilih == 1) {
+                persegi();
+            } else if ( pilih == 2) {
+                persegiPanjang();
+            } else if ( pilih == 3) {
+                segitiga();
+            } else if ( pilih == 4) {
+                trapesium();
+            } else if (pilih == 5) {
+                layangLayang();
+            } else if (pilih == 6) {
+                belahKetupat();
+            } else if (pilih == 7) {
+                lingkaran();
+            } else {
+                System.out.println("Input yang anda masukan salah");
+            }
+        } while (pilih != 8) ; 
     }
 
     public static void perkenalan() {
@@ -119,7 +155,7 @@ public class rumusBangunDatar {
 
 
     public static void layangLayang() {
-        System.out.println("==== Trapesium ====");
+        System.out.println("==== Layang - Layang ====");
         System.out.print("Ingin hitung 1.luas atau 2.keliling (masukan no) : ");
         var pilih = scanner.next().charAt(0);
         if (pilih == '1' ) {
@@ -145,6 +181,43 @@ public class rumusBangunDatar {
         }
 
     }
+
+    public static void belahKetupat() {
+        System.out.println("==== Belah ketupat ====");
+        System.out.print("Ingin hitung 1.luas atau 2.keliling (masukan no) : ");
+        var pilih = scanner.next().charAt(0);
+        System.out.print("Masukan Panjang sisi : ");
+        int sisi = scanner.nextInt();
+        System.out.print("Masukan panjang dari sudut ke sudut 1 :  ");
+        int sudut1 = scanner.nextInt();
+        System.out.print("Masukan panjang dari sudut ke sudut 2 :  ");
+        int sudut2 = scanner.nextInt();
+        if (pilih == '1') {
+            var luas = (sudut1*sudut2)/2; // rumus belah ketupat
+            System.out.println("Hasilny adalah : " + luas);
+        } else if (pilih == '2') {
+            var keliling = 4 * sisi ;
+            System.out.println("hasilnya adalah : " + keliling);
+        } else {
+            System.out.println("input yang anda masukan salah !");
+        }
+    }
+
+    public static void lingkaran() {
+        System.out.println("==== Lingkaran ====");
+        System.out.print("Ingin hitung 1.luas atau 2.keliling (masukan no) : ");
+        var pilih = scanner.next().charAt(0);
+        System.out.print("Masukan Nilai diameter : ");
+        var diameter = scanner.nextInt();
+        if (pilih == '1') {
+            var jari = diameter/2 ; 
+            var luas = 3.14 * jari * jari; // Rumus Luas Lingkaran
+            System.out.println("Hasilnya adalah : " + luas);
+        } else if (pilih == '2') {
+            var keliling = 3.14 * diameter; // Rumus Keliling Lingkaran
+            System.out.println("Hasilnya adalah : " + keliling);
+        }
+    } 
 
 
 
