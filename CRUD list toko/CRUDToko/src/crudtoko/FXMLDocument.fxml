@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crudtoko.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="17.0" layoutY="6.0" minHeight="16" minWidth="69" text="Transaksi Penjualan Barang">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="label1" layoutX="85.0" layoutY="64.0" minHeight="16" minWidth="69" text="Tanggal">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label21" layoutX="85.0" layoutY="99.0" minHeight="16" minWidth="69" text="Pelanggan">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="84.0" layoutY="162.0" minHeight="16" minWidth="69" text="Kode Barang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="243.0" layoutY="162.0" minHeight="16" minWidth="69" text="Nama Barang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="394.0" layoutY="162.0" minHeight="16" minWidth="69" text="Harga">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="label5" layoutX="472.0" layoutY="162.0" minHeight="16" minWidth="69" text="Jml">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpTgl" layoutX="162.0" layoutY="61.0" prefHeight="25.0" prefWidth="323.0" />
+      <TextField fx:id="tfNamaPlg" layoutX="162.0" layoutY="96.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="tfKodePlg" layoutX="384.0" layoutY="96.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="tfkodeBrg" layoutX="84.0" layoutY="186.0" prefHeight="25.0" prefWidth="69.0" />
+      <TextField fx:id="tfNamaBrg" layoutX="189.0" layoutY="186.0" prefHeight="25.0" prefWidth="185.0" />
+      <TextField fx:id="tfHarga" layoutX="379.0" layoutY="186.0" prefHeight="25.0" prefWidth="63.0" />
+      <TextField fx:id="tfJml" layoutX="448.0" layoutY="186.0" prefHeight="25.0" prefWidth="69.0" />
+      <Button fx:id="btnSimpan" layoutX="444.0" layoutY="14.0" mnemonicParsing="false" onAction="#simpan" text="Simpan" />
+      <Button fx:id="btnBatal" layoutX="507.0" layoutY="14.0" mnemonicParsing="false" onAction="#batal" text="Batal" />
+      <Button fx:id="BtnshowPlg" layoutX="460.0" layoutY="96.0" mnemonicParsing="false" onAction="#showPlg" text="..." />
+      <Button fx:id="Btnshow" layoutX="154.0" layoutY="186.0" mnemonicParsing="false" onAction="#show" text="..." />
+      <Button fx:id="btnAddItem" layoutX="539.0" layoutY="186.0" mnemonicParsing="false" onAction="#addItem" text="AddItem" />
+      <Button fx:id="btnDelItem" layoutX="539.0" layoutY="220.0" mnemonicParsing="false" onAction="#delItem" prefHeight="25.0" prefWidth="62.0" text="DelItem" />
+      <Separator layoutX="-11.0" layoutY="51.0" prefHeight="3.0" prefWidth="695.0" />
+      <Separator layoutX="4.0" layoutY="146.0" prefHeight="3.0" prefWidth="671.0" />
+      <TableView fx:id="tbdetail" layoutX="82.0" layoutY="220.0" prefHeight="173.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="kode" prefWidth="66.0000228881836" text="Kode" />
+          <TableColumn fx:id="nama" prefWidth="115.33329772949219" text="Nama Barang " />
+            <TableColumn fx:id="harga" prefWidth="80.666748046875" text="Harga" />
+            <TableColumn fx:id="jml" prefWidth="78.66668701171875" text="Jml" />
+            <TableColumn fx:id="subTotal" prefWidth="93.33328247070312" text="SubTotal" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
